@@ -21,5 +21,3 @@ function show() {
 
     const firsContact = document.querySelector('#contact-list > li > label')
     console.log(firsContact)
-
-  }
