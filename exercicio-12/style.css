@@ -1,0 +1,181 @@
+body {
+    /* Define a fonte do texto para 'Roboto', uma fonte moderna e sem serifa do Google Fonts */
+    font-family: 'Roboto', sans-serif; 
+
+    /* Define a cor de fundo para um cinza escuro, criando a base do tema escuro */
+    background-color: #121212; 
+
+    /* Define a cor do texto para um cinza claro, contrastando com o fundo escuro */
+    color: #e0e0e0;
+
+    /* Transforma o body em um container Flexbox para centralizar vertical e horizontalmente */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+}
+
+.container {
+    /* Define a largura máxima do container para 600 pixels */
+    max-width: 600px;
+    
+    /* Define o espaçamento interno do container para 30 pixels em todos os lados */
+    padding: 30px;
+    
+    /* Define o raio das bordas do container para 8 pixels, criando cantos arredondados */
+    border-radius: 8px;
+    
+    /* Define a cor de fundo do container para um cinza escuro, mais claro que o fundo do body */
+    background-color: #212121;
+
+    /* Adiciona uma sombra suave ao container, com uma cor azul escura para combinar com o tema */
+    box-shadow: 0px 4px 8px rgba(0, 0, 139, 0.2);
+}
+
+h1 {
+    /* Define a cor do título para um azul vibrante, destacando-o no tema escuro */
+    color: #2979FF;
+
+    /* Adiciona uma margem inferior ao título para separá-lo visualmente do conteúdo abaixo */
+    margin-bottom: 20px;
+}
+
+label {
+    /* Define o tamanho da fonte dos labels para 1rem */
+    font-size: 1rem;
+    
+    /* Define a cor do texto dos labels para um cinza claro */
+    color: #bdbdbd; 
+
+    /* Define os labels como blocos para melhor organização visual */
+    display: block; 
+
+    /* Adiciona uma margem inferior aos labels para separá-los dos inputs */
+    margin-bottom: 5px; 
+}
+
+/* Estiliza os inputs de texto */
+input[type="text"] {
+    /* Define a cor de fundo dos inputs para um cinza escuro, combinando com o tema */
+    background-color: #303030;
+
+    /* Define a cor do texto dos inputs para um cinza claro */
+    color: #e0e0e0; 
+
+    /* Remove a borda padrão dos inputs */
+    border: none; 
+
+    /* Define o espaçamento interno dos inputs para 12 pixels em todos os lados */
+    padding: 12px; 
+
+    /* Define o raio das bordas dos inputs para 4 pixels, criando cantos arredondados */
+    border-radius: 4px;
+
+    /* Define a largura dos inputs para 100% do container pai, ocupando todo o espaço disponível */
+    width: 100%; 
+
+    /* Adiciona uma transição suave para a cor de fundo dos inputs quando o usuário interage com eles */
+    transition: background-color 0.3s ease;
+}
+
+/* Estiliza os inputs de texto quando o usuário está com o mouse sobre eles */
+input[type="text"]:hover {
+    /* Define a cor de fundo dos inputs para um cinza um pouco mais claro quando o usuário passa o mouse sobre eles, criando um efeito sutil */
+    background-color: #424242;
+}
+
+/* Estiliza os inputs de texto quando o usuário está digitando neles */
+input[type="text"]:focus {
+    /* Define a cor de fundo dos inputs para um azul escuro quando o usuário está digitando neles, destacando o input ativo */
+    background-color: #0D47A1;
+
+    /* Define a cor do texto dos inputs para branco quando o usuário está digitando neles, melhorando a legibilidade */
+    color: white;
+}
+
+/* Estiliza os botões */
+button {
+    /* Define a cor de fundo dos botões para um gradiente linear que vai do azul escuro (#0D47A1) ao azul mais claro (#1976D2) */
+    background-image: linear-gradient(to right, #0D47A1, #1976D2); 
+
+    /* Define a cor do texto dos botões para branco */
+    color: white;
+
+    /* Remove a borda padrão dos botões */
+    border: none;
+
+    /* Define o espaçamento interno dos botões para 12 pixels em todos os lados */
+    padding: 12px 20px; 
+
+    /* Define o raio das bordas dos botões para 4 pixels, criando cantos arredondados */
+    border-radius: 4px; 
+
+    /* Define o cursor do mouse para um ponteiro (mãozinha) quando o usuário passa o mouse sobre o botão, indicando que ele é clicável */
+    cursor: pointer;
+
+    /* Define uma transição suave para a opacidade do botão quando o usuário passa o mouse sobre ele, criando um efeito sutil de destaque */
+    transition: opacity 0.3s ease;
+}
+
+/* Estiliza os botões quando o usuário passa o mouse sobre eles */
+button:hover {
+    /* Define a opacidade dos botões para 0.8 (80%) quando o usuário passa o mouse sobre eles, criando um efeito de destaque sutil */
+    opacity: 0.8; 
+}
+
+#technologies > div {
+    /* Define a cor de fundo das linhas de tecnologias para um cinza escuro, um pouco mais claro que o fundo do container */
+    background-color: #303030; 
+    
+    /* Define o espaçamento interno das linhas de tecnologias para 10 pixels em todos os lados */
+    padding: 10px; 
+    
+    /* Define o raio das bordas das linhas de tecnologias para 4 pixels, criando cantos arredondados */
+    border-radius: 4px; 
+    
+    /* Adiciona uma margem inferior de 15 pixels entre as linhas de tecnologias */
+    margin-bottom: 15px;
+    
+    /* Define a largura das linhas de tecnologias para 100% do container pai, ocupando todo o espaço disponível */
+    width: 100%;
+}
+
+/* Estiliza os botões "Remover" nas linhas de tecnologias */
+.remove-btn { 
+    /* Define a cor de fundo dos botões "Remover" para um vermelho escuro (#b71c1c) */
+    background-color: #b71c1c; 
+
+    /* Define a cor do texto dos botões "Remover" para branco */
+    color: white;
+
+    /* Remove a borda padrão dos botões */
+    border: none;
+
+    /* Define o espaçamento interno dos botões "Remover" para 8 pixels em todos os lados */
+    padding: 8px 16px;
+
+    /* Define o raio das bordas dos botões "Remover" para 4 pixels, criando cantos arredondados */
+    border-radius: 4px;
+
+    /* Define o cursor do mouse para um ponteiro (mãozinha) quando o usuário passa o mouse sobre o botão, indicando que ele é clicável */
+    cursor: pointer;
+
+    /* Define uma transição suave para a cor de fundo do botão quando o usuário passa o mouse sobre ele, criando um efeito visual agradável */
+    transition: background-color 0.3s ease;
+}
+
+/* Estiliza os botões "Remover" quando o usuário passa o mouse sobre eles */
+.remove-btn:hover {
+    /* Define a cor de fundo dos botões "Remover" para um vermelho mais escuro (#d32f2f) quando o usuário passa o mouse sobre eles */
+    background-color: #d32f2f;
+}
+
+/* Estiliza os radio buttons e seus labels */
+input[type="radio"] + label {
+    /* Define a cor do texto dos labels dos radio buttons para um cinza claro */
+    color: #bdbdbd;
+
+    /* Adiciona uma margem esquerda de 10 pixels aos labels dos radio buttons, criando um espaçamento visual entre os radio buttons e seus labels */
+    margin-left: 10px;
+}
